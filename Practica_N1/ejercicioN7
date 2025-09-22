@@ -1,0 +1,5 @@
+const persona = {
+  nombre:"americo",
+  edad:19
+};
+console.log(`hola soy ${persona.nombre} y tengo ${persona.edad} años`);
