@@ -1,0 +1,10 @@
+function filtrarPorA(nombres) {
+  const res = [];
+  for (const nom of nombres) {
+    if (typeof nom === "string" && nom[0]?.toUpperCase() === "A") 
+        res.push(nom);
+  }
+  return res;
+}
+
+console.log(filtrarPorA(["yole","americo","agner","asistiri","chabela","yoelaaa"]));
