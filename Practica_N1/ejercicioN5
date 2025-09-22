@@ -1,0 +1,4 @@
+const mayor = function (a,b) {
+  return a>b ?a:b;
+};
+console.log("mayor entre 8 y 3:", mayor(8,3));
