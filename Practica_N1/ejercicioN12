@@ -1,0 +1,7 @@
+const producto = { 
+    nombre: "laptop",
+    precio: 100212.11
+};
+const inf = p => `producto: ${p.nombre}  precio: bs ${p.precio}`;
+
+console.log(inf(producto));
