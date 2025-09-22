@@ -1,0 +1,7 @@
+function areaRectangulo(rect) {
+  return rect.base*rect.altura;
+}
+
+
+const mifig = {base:5,altura:3};
+console.log("area del rectagulo=",areaRectangulo(mifig));
