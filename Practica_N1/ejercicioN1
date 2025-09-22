@@ -1,0 +1,8 @@
+const num1=2
+if (num1 > 0) {
+  console.log("el num es pocitivo");
+} else if (num1 < 0) {
+  console.log("el num es negativo");
+} else {
+  console.log("el numero es igual a 0");
+}
