@@ -1,0 +1,13 @@
+function obtenerFrutas() {
+  return new Promise((resolve) => {
+    resolve(["pera","platano","sandia"]);
+  });
+}
+
+async function mostrarFrutas() {
+  const frutas = await obtenerFrutas();
+  console.log("frutas:", frutas);
+}
+
+mostrarFrutas();
+
