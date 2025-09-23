@@ -1,0 +1,11 @@
+const calculadora = {
+  sumar: (a, b) => a + b,
+  restar: (a, b) => a - b,
+  multiplicar: (a, b) => a * b,
+  dividir: (a, b) => (b === 0 ? "no se puede div entre 0" : a / b),
+};
+
+console.log("sumar(7,3) =", calculadora.sumar(7, 3));
+console.log("restar(7,3) =", calculadora.restar(7, 3));
+console.log("multiplicar(7,3) =", calculadora.multiplicar(7, 3));
+console.log("dividir(10,0) =", calculadora.dividir(10, 0));
