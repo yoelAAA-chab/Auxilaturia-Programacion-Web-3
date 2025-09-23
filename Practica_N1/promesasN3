@@ -1,0 +1,7 @@
+const p1 = Promise.resolve(5);
+const p2 = Promise.resolve(7);
+
+Promise.all([p1, p2]).then((valores) => {
+  const suma = valores[0] + valores[1];
+  console.log("suma es:", suma);
+});
