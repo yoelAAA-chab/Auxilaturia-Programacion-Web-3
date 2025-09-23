@@ -1,0 +1,22 @@
+const alumnos = [{ 
+    nombre: "americo", nota:100
+},
+  { 
+    nombre: "agner", nota:100
+},
+  { 
+    nombre: "asistiri", nota:100
+},
+  { 
+    nombre: "felipe", nota: 0
+}];
+
+function aprobados(lista) {
+  const res = [];
+  for (const a of lista) {
+    if (a.nota >= 51) res.push(a);
+  }
+  return res;
+}
+
+console.log("aprobados:", aprobados(alumnos));
