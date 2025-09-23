@@ -1,0 +1,18 @@
+const mascotas = [
+  { nombre: "chabela", tipo: "gato" },
+  { nombre: "roman", tipo: "gato" },
+  { nombre: "aton", tipo: "perro" },
+  { nombre: "nose", tipo: "xd" }
+];
+
+function soloPerros(lista) {
+  const res = [];
+  for (let i = 0; i < lista.length; i++) {
+    if (lista[i].tipo === "perro") {
+      res.push(lista[i]);
+    }
+  }
+  return res;
+}
+
+console.log("perros:", soloPerros(mascotas));
