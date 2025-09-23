@@ -1,0 +1,9 @@
+const objeto = { 
+  id: 1878011, 
+  nombre: "silla", 
+  precio: 100 
+};
+
+for (let clave in objeto) {
+  console.log(clave + " => " + objeto[clave]);
+}
