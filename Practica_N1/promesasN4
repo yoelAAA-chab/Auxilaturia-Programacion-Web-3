@@ -1,0 +1,17 @@
+function resultadoExamen(nota) {
+  return new Promise((resolve, reject) => {
+    if (nota >= 51) resolve("aprobado");
+    else reject("rprobado");
+  });
+}
+
+async function verificar() {
+  try {
+    const res = await resultadoExamen(40); 
+    console.log(res);
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+verificar();
