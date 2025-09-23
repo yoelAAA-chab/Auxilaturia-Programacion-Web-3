@@ -1,0 +1,19 @@
+// 19. Objeto cuentaBancaria
+const cuentaBancaria = {
+  saldo: 0,
+  depositar(monto) {
+    if (monto <= 0) return "monto invalido";
+    this.saldo += monto;
+    return `depocito saldo: ${this.saldo}`;
+  },
+  retirar(monto) {
+    if (monto <= 0) return "monto no validp";
+    if (monto > this.saldo) return "insuficientee";
+    this.saldo -= monto;
+    return `retiro saldo: ${this.saldo}`;
+  }
+};
+
+console.log(cuentaBancaria.depositar(100));
+console.log(cuentaBancaria.retirar(30));
+console.log(cuentaBancaria.retirar(1000));
