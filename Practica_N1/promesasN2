@@ -1,0 +1,6 @@
+async function proceso() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+  console.log("prroceso completado");
+}
+
+proceso();
