@@ -1,0 +1,9 @@
+const promesa1 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("mensaje después de 2 segundos");
+  }, 2000);
+});
+
+promesa1.then((res) => {
+  console.log(res);
+});
